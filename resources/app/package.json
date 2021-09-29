@@ -1,0 +1,35 @@
+{
+  "name": "Vysor",
+  "version": "2.2.2",
+  "main": "electron-main.js",
+  "description": "A window to your Android",
+  "scripts": {
+    "start": "electron .",
+    "package": "node package.js",
+    "package-linux": "TARGET_PLATFORM=linux node package.js"
+  },
+  "dependencies": {
+    "adm-zip": "^0.4.13",
+    "electron-squirrel-startup": "^1.0.0",
+    "mkdirp": "^0.5.1",
+    "ncp": "^2.0.0"
+  },
+  "devDependencies": {
+    "deferred": "^0.7.11",
+    "electron": "^4.0.4",
+    "electron-builder": "^20.43.0",
+    "electron-packager": "12.2.0",
+    "electron-winstaller": "^2.7.0"
+  },
+  "build": {
+    "asar": false
+  },
+  "chrome": {
+    "autoUpdater": {
+      "nutsFeedBaseUrl": "https://vysornuts.clockworkmod.com/"
+    },
+    "runtimeId": "lhaagglfcbekgaiedemenlgbkbhjepnk",
+    "updateUrl": "http://koush.github.io/vysor.io/chrome-update.xml",
+    "appId": "gidgenkbbabolejbgbpnhbimgjbffefm"
+  }
+}
